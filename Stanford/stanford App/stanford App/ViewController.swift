@@ -30,15 +30,62 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func performOperation(_ sender: UIButton) {
-        userIsInTheMiddleOfTyping = false
-        if let mathematicalSymbol = sender.currentTitle {
-            if mathematicalSymbol == "π" {
-                display.text = String(Double.pi)
-            }
+    var displayValue : Double {
+        // get方法
+        get {
+            return Double(display.text!)!
         }
+        
+        
+        set {
+            display.text! = String(newValue)
+        }
+        
     }
     
     
+    
+    // 当点击符号的时候，应当结束上一次的输入
+    @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathematicalSymbol = sender.currentTitle {
+
+            // 方案一
+//            if mathematicalSymbol == "π" {
+//                display.text = String(Double.pi)
+//            }
+            
+            // 方案二
+            switch mathematicalSymbol {
+            case "π":
+//                display.text = String(Double.pi)
+                displayValue = Double.pi
+                
+            case "√" :
+//                let operand = Double(display.text!)!
+//                display.text = String(sqrt(operand))
+                displayValue = sqrt(displayValue)
+            default:
+                break
+            }
+            
+            
+        }
+    }
+    
+
+    
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
 
