@@ -13,7 +13,7 @@ let m : Int = 10
 let view : UIView = UIView() // -> alloc init
 //view = UIView() // 错误写法
 
-// swift中没有setter方法
+// swift中没有类似OC中的setXxxx方法
 view.backgroundColor = UIColor.redColor()
 view.frame = CGRectMake(0, 0, 100, 100)
 view.alpha = 0.5
