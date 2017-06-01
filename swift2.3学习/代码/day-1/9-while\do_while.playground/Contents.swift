@@ -9,9 +9,6 @@ while a > 0 {
     print(a)
 }
 
-
-
-
 /// 在swift中没有do_while循环 -> 修改成repeat_while循环
 repeat {
     a += 1

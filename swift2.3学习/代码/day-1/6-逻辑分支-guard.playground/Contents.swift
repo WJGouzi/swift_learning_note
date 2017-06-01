@@ -22,7 +22,7 @@ let idCard = true
 let money = true
 
 
-func judgeCanOnline(age : Int) {
+func judgeCanOnline(_ age : Int) {
     /// 判断年龄可以上网
     if age >= 18 {
         // 如果条件比较多嵌套的话，这样的可读性就不好
@@ -36,7 +36,7 @@ func judgeCanOnline(age : Int) {
 judgeCanOnline(age)
 
 // guard方式
-func online(age : Int, card : Bool, money : Bool) {
+func online(_ age : Int, card : Bool, money : Bool) {
     // 1.判断年龄
     guard age >= 18 else {
         print("回家找妈妈")

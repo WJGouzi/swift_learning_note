@@ -3,7 +3,7 @@
 import UIKit
 
 /// 在swift中的特有的
-/// 在swift中nil也是特殊类型，因为和真是类型不匹配，所以不能进行赋值，也就是说，一个nil类型的不能赋值给String的。
+/// 在swift中nil也是特殊类型，因为和真实类型不匹配，所以不能进行赋值，也就是说，一个nil类型的不能赋值给String的。
 
 // swift中的规定，对象中的任何属性在创建对象的时候，都必须有明确的初始化值
 //class student : NSObject {

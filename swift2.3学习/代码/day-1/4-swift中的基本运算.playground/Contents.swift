@@ -14,9 +14,3 @@ let result = n + tempM
 // 将浮点型转为整型 Int(n) -> 强制转换不会进行四舍五入
 let tempN = Int(n)
 let results = m + tempN
-
-
-
-
-
-

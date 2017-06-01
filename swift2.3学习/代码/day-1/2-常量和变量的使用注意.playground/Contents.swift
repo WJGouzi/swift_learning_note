@@ -14,8 +14,8 @@ let view : UIView = UIView() // -> alloc init
 //view = UIView() // 错误写法
 
 // swift中没有类似OC中的setXxxx方法
-view.backgroundColor = UIColor.redColor()
-view.frame = CGRectMake(0, 0, 100, 100)
+view.backgroundColor = UIColor.red
+view.frame = CGRect(origin: CGPoint(x:100, y:100), size: CGSize(width:100, height:40)) //CGRectMake(0, 0, 100, 100)
 view.alpha = 0.5
 // swift中增加了Bool类型 (true/false)
-view.hidden = true
+view.isHidden = true
